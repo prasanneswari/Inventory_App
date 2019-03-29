@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shekinah.inventory.Return_main">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#6495ED"
+
+        app:titleTextColor="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/headngid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text=" Returns"
+                android:textSize="25dp" />
+            <!-- <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >-->
+
+            <!--  <ImageButton
+                android:id="@+id/b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/arbkwht" />-->
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--<Button
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            android:text="admin h"
+            android:id="@+id/adhid"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            android:id="@+id/ushid"
+            android:text="user h"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            android:id="@+id/usrid"
+            android:text="user r"/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/proid"
+            android:visibility="gone"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lstid">
+
+        </ListView>
+
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="10dp">
+             <TextView
+
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="#ffffff"
+                 android:text="Short Term Returns"
+                 android:textStyle="bold"
+                 android:textSize="20dp"
+                 android:id="@+id/srttrmid"
+                 android:layout_marginLeft="40dp"
+                 android:layout_marginRight="40dp"
+
+                 android:padding="20dp"
+                 android:gravity="center"
+                 android:background="@drawable/savebutton"
+                 />
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="10dp">
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="#ffffff"
+                 android:text="LongTerm Returns "
+                 android:id="@+id/lngtrmid"
+                 android:textStyle="bold"
+                 android:textSize="20dp"
+                 android:layout_marginLeft="40dp"
+                 android:layout_marginRight="40dp"
+                 android:padding="20dp"
+                 android:gravity="center"
+                 android:background="@drawable/savebutton"
+                 />
+         </LinearLayout>-->
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="10dp">
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="#ffffff"
+                 android:id="@+id/reqid"
+                 android:text="Requests"
+                 android:textStyle="bold"
+                 android:textSize="20dp"
+                 android:layout_marginLeft="60dp"
+                 android:layout_marginRight="60dp"
+                 android:padding="20dp"
+                 android:gravity="center"
+                 android:background="@drawable/savebutton"
+                 />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="10dp">
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="#ffffff"
+                 android:text="Reports"
+                 android:textStyle="bold"
+                 android:textSize="20dp"
+                 android:id="@+id/report"
+                 android:layout_marginLeft="60dp"
+                 android:layout_marginRight="60dp"
+                 android:padding="20dp"
+                 android:gravity="center"
+                 android:background="@drawable/savebutton"
+                 />
+         </LinearLayout>-->
+    </LinearLayout>
+
+</LinearLayout>

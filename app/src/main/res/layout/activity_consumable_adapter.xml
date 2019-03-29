@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shekinah.inventory.ConsumableAdapter">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/row"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.15"
+                android:layout_height="50dp"
+                android:text="Req ID"
+                android:textColor="@android:color/black"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="left"
+                android:id="@+id/reqId"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:text="User Name"
+                android:textColor="@android:color/black"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="left"
+                android:id="@+id/reqUser"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="50dp"
+                android:text="Due Date"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:layout_gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:id="@+id/reqDate"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.15"
+                android:layout_height="50dp"
+                android:text="Status"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:layout_gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:id="@+id/reqStat"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

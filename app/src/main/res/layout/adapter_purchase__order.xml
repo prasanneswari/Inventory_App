@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shekinah.inventory.Adapter_purchase_Order">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:id="@+id/row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:text="Purchase_id"
+                    android:textColor="#000"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="2dp"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    android:id="@+id/purchase_id"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="#000">
+                </View>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:text="Req_date"
+                    android:id="@+id/req_date_id"
+                    android:textColor="#000"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="2dp"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="#000">
+                </View>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:text="Due_date"
+                    android:textColor="#000"
+                    android:id="@+id/due_date_id"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="2dp"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="#000">
+                </View>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:text="Status"
+                    android:id="@+id/status_id"
+                    android:textColor="#000"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="2dp"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="#000">
+                </View>
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:id="@+id/row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <!--<CheckBox-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="0.10"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/P_checkbox"/>-->
+            <!--<View android:layout_width="1dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/divider">-->
+            <!--</View>-->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:layout_height="match_parent"
+                android:text="Id"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/P_id" />
+            <View android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@drawable/divider">
+            </View>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.45"
+                android:layout_height="match_parent"
+                android:text="Name"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/P_product" />
+            <View android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@drawable/divider">
+            </View>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.15"
+                android:layout_height="match_parent"
+                android:text="Curr"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/P_currQty" />
+            <View android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@drawable/divider">
+            </View>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.15"
+                android:layout_height="match_parent"
+                android:text="Thresh"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/P_thresh" />
+            <View android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@drawable/divider">
+            </View>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.15"
+                android:layout_height="match_parent"
+                android:text="Qty"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/P_qty" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

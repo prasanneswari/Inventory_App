@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/row"
+        android:background="@drawable/border_blue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent"
+            android:text="Position"
+            android:textColor="@android:color/black"
+            android:paddingLeft="20dp"
+            android:paddingRight="2dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_gravity="left"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="match_parent"
+            android:text="Quantity"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:paddingLeft="20dp"
+            android:paddingRight="2dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="left" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="50dp"
+            android:text="Status"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:layout_gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingRight="2dp" />
+    </TableRow>
+
+    <ListView
+        android:id="@+id/position_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

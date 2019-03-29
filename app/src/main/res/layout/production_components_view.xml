@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/row"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="50dp"
+                android:text="Component"
+                android:id="@+id/componentname"
+                android:textColor="@android:color/black"
+                android:paddingLeft="20dp"
+                android:paddingRight="2dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="left"/>
+
+            <View android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@drawable/divider">
+            </View>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="match_parent"
+                android:text="Quantity"
+                android:id="@+id/componentqty"
+                android:textColor="@android:color/black"
+                android:paddingLeft="20dp"
+                android:paddingRight="2dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="left"/>
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

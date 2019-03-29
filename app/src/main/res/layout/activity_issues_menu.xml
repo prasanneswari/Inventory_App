@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/withoutimage"
+    tools:context="com.example.shekinah.inventory.IssuesMenu">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ISSUES"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="right"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:text="Back"
+            android:textSize="15dp"
+            android:background="@drawable/whitebutton"
+            android:id="@+id/back"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+    <Button
+        android:layout_width="200dp"
+        android:layout_weight="0.25"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:text="Consumable"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/whitebutton"
+        android:id="@+id/consumable"
+        />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:text="Product  Development"
+            android:textSize="15dp"
+            android:background="@drawable/whitebutton"
+            android:layout_marginTop="5dp"
+            android:id="@+id/productDev"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:text="Production"
+            android:textSize="15dp"
+            android:background="@drawable/whitebutton"
+            android:layout_marginTop="5dp"
+            android:id="@+id/production"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:text="Replacement"
+            android:textSize="15dp"
+            android:background="@drawable/whitebutton"
+            android:layout_marginTop="5dp"
+            android:id="@+id/replacement"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:text="Return"
+            android:textSize="15dp"
+            android:background="@drawable/whitebutton"
+            android:layout_marginTop="5dp"
+            android:id="@+id/returnP"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:text="Finished  Products"
+            android:textSize="15dp"
+            android:background="@drawable/whitebutton"
+            android:layout_marginTop="5dp"
+            android:id="@+id/finishedP"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shekinah.inventory.ProductAdapter">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:id="@+id/row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_gravity="left"
+                android:layout_weight="0.4"
+                android:paddingLeft="20dp"
+                android:paddingRight="2dp"
+                android:text="Product"
+                android:textColor="@android:color/black" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@drawable/divider"></View>
+
+            <TextView
+                android:id="@+id/pDesc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_gravity="left"
+                android:layout_weight="0.3"
+                android:paddingLeft="20dp"
+                android:paddingRight="2dp"
+                android:text="Description"
+                android:textColor="@android:color/black" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@drawable/divider"></View>
+
+            <TextView
+                android:id="@+id/pStatus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_gravity="left"
+                android:layout_weight="0.3"
+                android:paddingLeft="20dp"
+                android:paddingRight="2dp"
+                android:text="Status"
+                android:textColor="@android:color/black" />
+        </TableRow>
+     </TableLayout>
+</LinearLayout>

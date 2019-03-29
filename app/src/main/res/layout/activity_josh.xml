@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/withoutimage"
+tools:context="com.example.shekinah.inventory.josh">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="right"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="0.25"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:text="Cancel"
+        android:background="@drawable/whitebutton"
+        android:id="@+id/B_Cancel_Id"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="right"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="5dp"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:text="unordered"
+        android:background="@drawable/whitebutton"
+        android:id="@+id/pendingButton"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:text="Ordered"
+        android:background="@drawable/whitebutton"
+        android:id="@+id/orderedButton"/>
+
+</LinearLayout>
+    </LinearLayout>

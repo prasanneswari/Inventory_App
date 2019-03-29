@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shekinah.inventory.Return_user">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shadeview"
+                android:orientation="horizontal"
+                android:padding="2dp">
+                <!-- <View
+                     android:layout_width="1dp"
+                     android:layout_height="40dp"
+                     android:background="#000000"></View>-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Pid" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#000000"></View>
+
+                <TextView
+                    android:id="@+id/sttmid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Pname"
+                    android:singleLine="true" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#000000"></View>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Qty Take"
+                    android:singleLine="true"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#000000"></View>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Qty return"
+                    android:singleLine="true"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#000000"></View>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Qty Balance"
+                    android:singleLine="true"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    />
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:id="@+id/rtrnlstid"
+        >
+
+    </ListView>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progid"/>
+</LinearLayout>

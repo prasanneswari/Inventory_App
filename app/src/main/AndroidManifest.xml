@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shekinah.inventory">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StockIncharge1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Products"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Locations"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Warehouses"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddLoc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddWarehouse"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddProducts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Status"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".updateLoc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".updateWarehouse"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".updateStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateLocationStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LocStatusU"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateWHStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WHStatusU"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProdUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Positions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddPosition"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdatePosition"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Employees" />
+        <activity android:name=".UpdateEmp" />
+        <activity android:name=".UserRole" />
+        <activity android:name=".Admin" />
+        <activity android:name=".AddEmployee" />
+        <activity android:name=".FamilyDetails" />
+        <activity android:name=".IssuesMenu" />
+        <activity android:name=".UserMain" />
+        <activity
+            android:name=".AddUserReq"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".PrdList" />
+        <activity android:name=".ConsumableIssues" />
+        <activity android:name=".ReqDetails" />
+        <activity android:name=".ProductionHomePg" />
+        <activity android:name=".PurchaseMainPg" />
+        <activity android:name=".JobRolesMenu" />
+        <activity android:name=".NewRequisitionGenerate" />
+        <activity android:name=".SelectProduct" />
+        <activity android:name=".PosPrdSearch" />
+        <activity android:name=".PurchasePending" />
+        <activity android:name=".PurchaseOrdered" />
+        <activity android:name=".OrderDetails" />
+        <activity android:name=".ProductPositionPg" />
+        <activity android:name=".SplashScreen" />
+        <activity android:name=".purchase_order" />
+        <activity android:name=".Purchase_products" />
+        <activity android:name=".josh" />
+        <activity android:name=".PositionQuantityDetails" />
+        <activity android:name=".AddProductionProduct" />
+        <activity android:name=".MyRequestDetails" />
+        <activity android:name=".Return_user" />
+        <activity android:name=".Return_main" />
+        <activity android:name=".admin_history" />
+        <activity android:name=".user_history" />
+        <activity android:name=".purchase_admin" />
+        <activity android:name=".ordered_reqvi"></activity>
+        <activity android:name=".SuppressItems" />
+        <activity android:name=".OrderedRequisition"></activity>
+        <activity android:name=".User_Forecast"></activity>
+        <activity android:name=".Store_Forecast"></activity>
+        <activity android:name=".Forecasting"></activity>
+
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/transp_border"
+                android:orientation="horizontal"
+                android:padding="2dp">
+                <TextView
+                    android:id="@+id/pid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="pid"
+                    android:singleLine="true"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#000000"></View>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:id="@+id/pnamid"
+                    android:text="pname" />
+                <!--  <View
+                      android:layout_width="1dp"
+                      android:layout_height="40dp"
+                      android:background="#000000"></View>
+
+                  <TextView
+                      android:id="@+id/sunsetid"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center"
+                      android:layout_weight="0.2"
+                      android:gravity="center"
+                      android:textColor="#000000"
+                      android:text="sunset"
+
+                      android:singleLine="true" />-->
+
+                <!-- &lt;!&ndash; <View
+                      android:layout_width="1dp"
+                      android:layout_height="40dp"
+                      android:background="#000000"></View>
+
+                  <TextView
+                      android:id="@+id/slrnoonid"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center"
+                      android:layout_weight="0.2"
+                      android:gravity="center"
+                      android:textColor="#000000"
+                      android:text="solar_noon"
+                      android:singleLine="true"
+                      android:paddingLeft="2dp"
+                      android:paddingRight="2dp"
+                      />-->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#000000"></View>
+
+                <TextView
+                    android:id="@+id/qntakeid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="qty take"
+                    android:singleLine="true"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    />-->
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#000000"></View>
+
+                <TextView
+                    android:id="@+id/qntyreturnid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="qty return"
+                    android:textColor="#000000"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#000000"></View>
+
+                <TextView
+                    android:id="@+id/qntybalid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="qty bal"
+                    android:textColor="#000000"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+</LinearLayout>

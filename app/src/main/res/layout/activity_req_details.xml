@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/withoutimage"
+    tools:context="com.example.shekinah.inventory.ReqDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="REQUISITION  DETAILS"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="right"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            android:text="Update"
+            android:background="@drawable/whitebutton"
+            android:id="@+id/updateUReq"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            android:text="Cancel"
+            android:background="@drawable/whitebutton"
+            android:id="@+id/cancelUReq"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_blue"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingRight="10dp"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.30"
+            android:layout_height="50dp"
+            android:text="Product"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_blue"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="50dp"
+            android:text="Requested"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_blue"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="5dp"
+            android:paddingRight="2dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="50dp"
+            android:text="Issued"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_blue"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="50dp"
+            android:text="Balance"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_blue"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="50dp"
+            android:text="Position"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_blue"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/expListReq"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="afterDescendants"></ExpandableListView>
+</LinearLayout>

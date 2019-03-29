@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shekinah.inventory.ReqDetailsAdapter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/reqRow">
+
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:id="@+id/itemCheck" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.30"
+            android:layout_height="40dp"
+            android:text="Product"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:id="@+id/reqPrd"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="40dp"
+            android:text="Req"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/reqQty"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="40dp"
+            android:text=""
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:inputType="phone"
+            android:digits="1234567890"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/issuedQty"/>
+
+        <!-- android:focusableInTouchMode="true"  -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="40dp"
+            android:text="Bal"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:id="@+id/reqBal"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="40dp"
+            android:text="Pos"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/itemPos"/>
+
+    </LinearLayout>
+</LinearLayout>

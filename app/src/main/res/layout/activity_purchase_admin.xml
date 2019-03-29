@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shekinah.inventory.purchase_admin">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#6495ED"
+        app:titleTextColor="#ffffff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/headngid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="Purchase Reqisition"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shadeview"
+                android:orientation="horizontal"
+                android:padding="2dp">
+                <!-- <View
+                     android:layout_width="1dp"
+                     android:layout_height="40dp"
+                     android:background="#000000"></View>-->
+                <CheckBox
+                    android:id="@+id/chid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#000000">
+
+                </View>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="PO id " />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#000000">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/sttmid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Name"
+                    android:singleLine="true" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#000000">
+
+                </View>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Req Qty"
+                    android:singleLine="true"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#000000"></View>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Ordrd qty"
+                    android:singleLine="true"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#000000"></View>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Balance"
+                    android:singleLine="true"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#000000"></View>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="status"
+                    android:singleLine="true"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    />
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+    <ListView
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:id="@+id/lstid"
+        android:descendantFocusability="beforeDescendants"
+        android:layout_width="match_parent">
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/progid"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:text="order"
+            android:id="@+id/orderid"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

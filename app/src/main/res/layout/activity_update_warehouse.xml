@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_1"
+    tools:context="com.example.shekinah.inventory.updateWarehouse">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="EDIT WAREHOUSE"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="right"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:text="SAVE"
+            android:textSize="15dp"
+            android:background="@drawable/whitebutton"
+            android:id="@+id/UWH"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:text="DELETE"
+            android:textSize="15dp"
+            android:background="@drawable/whitebutton"
+            android:id="@+id/DWH"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            android:text="Back"
+            android:background="@drawable/whitebutton"
+            android:id="@+id/updateUWC"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:text="Name"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="0.75"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawablePadding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:singleLine="true"
+        android:hint="Warehouse Name"
+        android:textSize="20sp"
+        android:textColorHint="#808080"
+        android:textColor="#000000"
+        android:id="@+id/WHUName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:text="Location"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"/>
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_weight="0.75"
+        android:layout_height="40dp"
+        android:id="@+id/WHULId"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:text="Status"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"/>
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_weight="0.75"
+        android:layout_height="40dp"
+        android:id="@+id/WHUS"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+    </Spinner>
+
+        </LinearLayout>
+</LinearLayout>

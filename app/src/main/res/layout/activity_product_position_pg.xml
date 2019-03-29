@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/withoutimage"
+    tools:context="com.example.shekinah.inventory.ProductPositionPg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="POSITIONS N PRODUCTS"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:layout_marginLeft="60dp"
+            android:gravity="center" />
+
+     <!--   <android.support.v7.widget.Toolbar
+            android:id="@+id/searchPosB"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="right"
+        android:weightSum="1">
+
+        <com.miguelcatalan.materialsearchview.MaterialSearchView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:id="@+id/search_view"
+            >
+
+        </com.miguelcatalan.materialsearchview.MaterialSearchView>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:text=" "
+            android:textSize="15dp"
+            android:background="@drawable/refresh"
+            android:id="@+id/refreshPP"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            android:text="Back"
+            android:background="@drawable/whitebutton"
+            android:id="@+id/cancelPrd"/>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/row"
+            android:background="@drawable/border_blue"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:text="Prd Code"
+                android:textColor="@android:color/black"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:text="Position"
+                android:textColor="@android:color/black"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="match_parent"
+                android:text="Products "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="50dp"
+                android:text="Quantity"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:layout_gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:hint="Search"
+                android:id="@+id/searchpid"
+                android:textColor="@android:color/black"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:layout_gravity="left"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:hint="Search"
+                android:id="@+id/searchpos"
+                android:textColor="@android:color/black"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:layout_gravity="left"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="match_parent"
+                android:hint="Search"
+                android:id="@+id/searchprd"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="left"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="50dp"
+                android:text="Search"
+                android:id="@+id/multiSearch"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:background="@drawable/whitebutton"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"/>
+
+        </TableRow>
+
+        <ListView
+            android:id="@+id/listPrd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </TableLayout>
+
+</LinearLayout>
+

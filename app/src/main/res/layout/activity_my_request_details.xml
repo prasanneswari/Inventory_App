@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/withoutimage"
+tools:context="com.example.shekinah.inventory.MyRequestDetails">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.05"
+    android:orientation="horizontal"
+    android:layout_marginEnd="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="35dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.1"
+        android:layout_height="wrap_content"
+        android:text="My Requisition Details"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/refresh" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.1"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="5dp"
+    android:gravity="right"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="reqUserName"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingRight="2dp"
+        android:id="@+id/reqUserName"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.1"
+    android:orientation="horizontal"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="5dp"
+    android:gravity="right"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.25"
+        android:layout_height="40dp"
+        android:text="Req Id : "
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingRight="2dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.25"
+        android:layout_height="40dp"
+        android:text="reqID"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingRight="2dp"
+        android:id="@+id/reqId"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.25"
+        android:layout_height="40dp"
+        android:text="Req Date : "
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingRight="2dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.25"
+        android:layout_height="40dp"
+        android:text="reqDt"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingRight="2dp"
+        android:id="@+id/reqDt"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.1"
+    android:orientation="horizontal"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="5dp"
+    android:gravity="right"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.25"
+        android:layout_height="40dp"
+        android:text="Due Date : "
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingRight="2dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.25"
+        android:layout_height="40dp"
+        android:text="reqDueDt"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingRight="2dp"
+        android:id="@+id/reqDueDt"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.25"
+        android:layout_height="40dp"
+        android:text="Status : "
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingRight="2dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.25"
+        android:layout_height="40dp"
+        android:text="reqStatus"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingRight="2dp"
+        android:id="@+id/reqStatus"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.1"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:text="Product"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:background="@drawable/border_blue"
+        android:textColor="@android:color/black"
+        android:layout_gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingRight="2dp"/>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="match_parent"
+        android:text="Qty Requested"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:background="@drawable/border_blue"
+        android:textColor="@android:color/black"
+        android:layout_gravity="left"
+        android:paddingLeft="10dp"
+        android:paddingRight="2dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.15"
+        android:layout_height="match_parent"
+        android:text="Qty Issued"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:background="@drawable/border_blue"
+        android:textColor="@android:color/black"
+        android:layout_gravity="left"
+        android:paddingLeft="10dp"
+        android:paddingRight="2dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.15"
+        android:layout_height="match_parent"
+        android:text="Status"
+        android:textStyle="bold"
+        android:background="@drawable/border_blue"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:layout_gravity="left"
+        android:paddingLeft="10dp"
+        android:paddingRight="2dp"
+        android:id="@+id/stat"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.7">
+    <ListView
+        android:id="@+id/prdDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.1"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="5dp"
+    android:gravity="right"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="0.25"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:text="Back"
+        android:background="@drawable/whitebutton"
+        android:id="@+id/cancelUReq"/>
+
+
+</LinearLayout>
+</LinearLayout>

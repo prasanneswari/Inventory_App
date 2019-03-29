@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_weight="0.40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Id "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_weight="0.60"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:id="@+id/prompt_id"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_weight="0.40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_weight="0.60"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:id="@+id/prompt_name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_weight="0.40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Qty Req "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_weight="0.60"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:id="@+id/prompt_qty_req"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_weight="0.40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Qty Rec "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_weight="0.60"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:id="@+id/prompt_qty_rec"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_weight="0.40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Req Date "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_weight="0.60"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:id="@+id/prompt_req_date"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_weight="0.40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rec Date "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_weight="0.60"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:id="@+id/prompt_rec_date"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_weight="0.40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Postion"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_weight="0.60"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:id="@+id/prompt_item_pos"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_weight="0.40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_weight="0.60"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:id="@+id/prompt_input_date"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_weight="0.40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:layout_weight="0.60"
+            android:id="@+id/prompt_qty_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" >
+
+            <requestFocus />
+
+        </EditText>
+
+    </LinearLayout>
+
+</LinearLayout>

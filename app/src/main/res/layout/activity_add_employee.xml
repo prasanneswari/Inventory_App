@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/withoutimage"
+    tools:context="com.example.shekinah.inventory.AddEmployee">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ADD  NEW  EMPLOYEE"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="right"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:text="Add"
+            android:textSize="15dp"
+            android:background="@drawable/whitebutton"
+            android:id="@+id/addEmp"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            android:text="Back"
+            android:background="@drawable/whitebutton"
+            android:id="@+id/cancelE"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:text="Full Name"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/nameE"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter Full Name"
+                    android:textColorHint="#808080"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/textView3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:text="User Name"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/uNameE"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter User Name"
+                    android:textColorHint="#808080"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/textView3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:text="Mail ID"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:singleLine="true"
+                    android:hint="Enter Mail ID"
+                    android:textSize="20sp"
+                    android:textColorHint="#808080"
+                    android:textColor="#000000"
+                    android:id="@+id/mailE"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:text="Password"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:singleLine="true"
+                    android:hint="Enter Password"
+                    android:textSize="20sp"
+                    android:textColorHint="#808080"
+                    android:textColor="#000000"
+                    android:id="@+id/pswE"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:text="Department"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:singleLine="true"
+                    android:hint="Department "
+                    android:textSize="20sp"
+                    android:textColorHint="#808080"
+                    android:textColor="#000000"
+                    android:id="@+id/deptE"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:text="Job Role"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"/>
+
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:singleLine="true"
+                    android:hint="Job Role "
+                    android:textSize="20sp"
+                    android:textColorHint="#808080"
+                    android:textColor="#000000"
+                    android:id="@+id/roleE"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:text="Head "
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:singleLine="true"
+                    android:hint="Reporting Head"
+                    android:textSize="20sp"
+                    android:textColorHint="#808080"
+                    android:textColor="#000000"
+                    android:id="@+id/headE"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:text="HR"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:singleLine="true"
+                    android:hint="Reporting HR"
+                    android:textSize="20sp"
+                    android:textColorHint="#808080"
+                    android:textColor="#000000"
+                    android:id="@+id/HRE"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:text="Location"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:singleLine="true"
+                    android:hint="Work Location"
+                    android:textSize="20sp"
+                    android:textColorHint="#808080"
+                    android:textColor="#000000"
+                    android:id="@+id/LocE"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:text="Blood Grp"
+                    android:layout_height="40dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_weight="0.35"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="2dp"
+                    android:singleLine="true"
+                    android:hint="Blood Group "
+                    android:textSize="20sp"
+                    android:textColorHint="#808080"
+                    android:textColor="#000000"
+                    android:id="@+id/BloodE"/>
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_weight="0.40"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="20dp"
+                    android:singleLine="true"
+                    android:hint="Blood Group "
+                    android:textSize="20sp"
+                    android:textColorHint="#808080"
+                    android:textColor="#000000"
+                    android:id="@+id/veE"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:text="Gender"
+                    android:layout_height="40dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="40dp"
+                    android:id="@+id/genderE"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:text="DOB "
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:singleLine="true"
+                    android:hint="Date of birth"
+                    android:textSize="20sp"
+                    android:textColorHint="#808080"
+                    android:textColor="#000000"
+                    android:id="@+id/DOBE"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:text="Joining Dt"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:singleLine="true"
+                    android:hint="Joining Dt"
+                    android:textSize="20sp"
+                    android:textColorHint="#808080"
+                    android:textColor="#000000"
+                    android:id="@+id/DOJE"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:text="Address"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:singleLine="true"
+                    android:hint="Enter Address"
+                    android:textSize="20sp"
+                    android:textColorHint="#808080"
+                    android:textColor="#000000"
+                    android:id="@+id/AddrE"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

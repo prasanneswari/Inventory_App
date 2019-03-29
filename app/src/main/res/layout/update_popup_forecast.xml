@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/popup"
+    android:background="@drawable/withoutimage"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:minHeight="200dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="5dp"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update_Forecasting"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/prdname"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.40"
+                android:paddingTop="2dp"
+                android:text="ForecastID"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/forecastEdt"
+                android:layout_width="0dp"
+                android:layout_weight="0.60"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:gravity="top"
+                android:focusable="false"
+                android:textStyle="bold"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentTop="true"
+                android:paddingTop="2dp"
+                android:text="Product"
+                android:textSize="18dp"
+                android:textColor="#000"
+
+                >
+            </TextView>
+
+            <EditText
+                android:id="@+id/prdEdt"
+                android:layout_width="0dp"
+                android:layout_weight="0.60"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:gravity="top"
+                android:focusable="false"
+                android:textStyle="bold"
+                >
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentTop="true"
+                android:paddingTop="2dp"
+                android:text="Qtygiven"
+                android:textSize="18dp"
+                android:textColor="#000"
+                >
+            </TextView>
+
+            <EditText
+                android:id="@+id/qtygivenEdt"
+                android:layout_width="0dp"
+                android:layout_weight="0.60"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:gravity="top"
+                android:textStyle="bold">
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:weightSum="1"
+            android:padding="10dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/whitebutton"
+                android:text="Update"
+                android:id="@+id/update"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/whitebutton"
+                android:text="Back"
+                android:id="@+id/cancelB"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

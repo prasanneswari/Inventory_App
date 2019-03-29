@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shekinah.inventory.ProdReqAdapter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            android:id="@+id/prdCheck"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="40dp"
+            android:text="Select Product"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingRight="2dp"
+            android:visibility="gone"
+            android:id="@+id/prdNameAdapter"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:visibility="gone"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:singleLine="true"
+            android:hint="number"
+            android:textSize="15sp"
+            android:textColorHint="#808080"
+            android:textColor="#000000"
+            android:id="@+id/qtyAdapter" />
+
+    </LinearLayout>
+</LinearLayout>

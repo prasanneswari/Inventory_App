@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/withoutimage"
+    tools:context="com.example.shekinah.inventory.AddProductionProduct">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="PRODUCTION  UNIT DETAILS"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="40dp"
+            android:text="UnitName"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingRight="2dp"
+            android:id="@+id/unitName"/>
+
+<!--
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:text="Save"
+            android:textSize="15dp"
+            android:background="@drawable/whitebutton"
+            android:id="@+id/saveComponents"/>-->
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            android:text="Back"
+            android:background="@drawable/whitebutton"
+            android:id="@+id/cancel"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="40dp"
+            android:text="Select Compmonent"
+            android:background="@drawable/whitebutton"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/holo_green_light"
+            android:layout_gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingRight="2dp"
+            android:id="@+id/prdSelected"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="40dp"
+            android:text="Quantity: "
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="2dp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:singleLine="true"
+            android:hint="number"
+            android:textSize="15sp"
+            android:textColorHint="#808080"
+            android:textColor="#000000"
+            android:id="@+id/prdQ" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            android:text="Add"
+            android:background="@drawable/whitebutton"
+            android:id="@+id/addP"/>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/row"
+        android:background="@drawable/border_blue"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:layout_height="50dp"
+        android:text="Component"
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:paddingRight="2dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:layout_gravity="left"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.4"
+        android:layout_height="match_parent"
+        android:text="Quantity"
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:paddingRight="2dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:layout_gravity="left"/>
+
+    </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+
+        <ListView
+            android:id="@+id/prdDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="right"
+        android:weightSum="1">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:layout_height="40dp"
+            android:text="I have reviewed all my requested products."
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingRight="2dp"
+            android:id="@+id/checkUnitComp"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@android:color/black"
+            android:text="Save"
+            android:textSize="15dp"
+            android:background="@drawable/whitebutton"
+            android:id="@+id/saveComponents"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

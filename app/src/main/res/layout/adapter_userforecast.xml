@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="40dp"
+            android:text="Forecast"
+            android:id="@+id/forecastid"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="2dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="40dp"
+            android:text="Name"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingRight="2dp"
+            android:id="@+id/nameid"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="40dp"
+            android:text="Due Date"
+            android:id="@+id/duedateid"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="2dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"
+            android:text="Qtygiven"
+            android:textColor="#000"
+            android:paddingLeft="15dp"
+            android:paddingRight="2dp"
+            android:gravity="center"
+            android:layout_gravity="left"
+            android:id="@+id/qtygivenid"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"
+            android:text="Qtyrequired"
+            android:textColor="#000"
+            android:paddingLeft="15dp"
+            android:paddingRight="2dp"
+            android:gravity="center"
+            android:layout_gravity="left"
+            android:id="@+id/qtyrequiredid"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"
+            android:text="reqdate"
+            android:textColor="#000"
+            android:paddingLeft="15dp"
+            android:paddingRight="2dp"
+            android:gravity="center"
+            android:layout_gravity="left"
+            android:id="@+id/reqdateid"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="40dp"
+            android:text="Status"
+            android:gravity="center_vertical"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:id="@+id/statusid"
+            android:textColor="@android:color/black"
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>
